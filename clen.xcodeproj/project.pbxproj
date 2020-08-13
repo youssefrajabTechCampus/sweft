@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F6024A5FEA8B3114A3BA251 /* Pods_6.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7665AD64980A04DD1D65B2C9 /* Pods_6.framework */; };
 		E80FC29624E460FD0013409F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80FC29524E460FD0013409F /* AppDelegate.swift */; };
 		E80FC29824E460FD0013409F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80FC29724E460FD0013409F /* SceneDelegate.swift */; };
 		E80FC29A24E460FD0013409F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80FC29924E460FD0013409F /* ViewController.swift */; };
@@ -16,7 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E80FC29224E460FD0013409F /* clen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D1EA4175E8523707E1DA681 /* Pods-6.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-6.release.xcconfig"; path = "Target Support Files/Pods-6/Pods-6.release.xcconfig"; sourceTree = "<group>"; };
+		7665AD64980A04DD1D65B2C9 /* Pods_6.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_6.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0E8BB070098F22D16826380 /* Pods-6.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-6.debug.xcconfig"; path = "Target Support Files/Pods-6/Pods-6.debug.xcconfig"; sourceTree = "<group>"; };
+		E80FC29224E460FD0013409F /* 6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E80FC29524E460FD0013409F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E80FC29724E460FD0013409F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E80FC29924E460FD0013409F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,24 +35,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F6024A5FEA8B3114A3BA251 /* Pods_6.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		121E0B400D000742E81C3591 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0E8BB070098F22D16826380 /* Pods-6.debug.xcconfig */,
+				2D1EA4175E8523707E1DA681 /* Pods-6.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		600C9C7F2C6669AAF3E3F44C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7665AD64980A04DD1D65B2C9 /* Pods_6.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E80FC28924E460FD0013409F = {
 			isa = PBXGroup;
 			children = (
 				E80FC29424E460FD0013409F /* clen */,
 				E80FC29324E460FD0013409F /* Products */,
+				121E0B400D000742E81C3591 /* Pods */,
+				600C9C7F2C6669AAF3E3F44C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		E80FC29324E460FD0013409F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E80FC29224E460FD0013409F /* clen.app */,
+				E80FC29224E460FD0013409F /* 6.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,21 +95,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E80FC29124E460FD0013409F /* clen */ = {
+		E80FC29124E460FD0013409F /* 6 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E80FC2A624E461020013409F /* Build configuration list for PBXNativeTarget "clen" */;
+			buildConfigurationList = E80FC2A624E461020013409F /* Build configuration list for PBXNativeTarget "6" */;
 			buildPhases = (
+				F660DB1A4722557BC9B0255A /* [CP] Check Pods Manifest.lock */,
 				E80FC28E24E460FD0013409F /* Sources */,
 				E80FC28F24E460FD0013409F /* Frameworks */,
 				E80FC29024E460FD0013409F /* Resources */,
+				E958442B126ADDEC61018A01 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = clen;
+			name = 6;
 			productName = clen;
-			productReference = E80FC29224E460FD0013409F /* clen.app */;
+			productReference = E80FC29224E460FD0013409F /* 6.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -115,7 +142,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E80FC29124E460FD0013409F /* clen */,
+				E80FC29124E460FD0013409F /* 6 */,
 			);
 		};
 /* End PBXProject section */
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E958442B126ADDEC61018A01 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-6/Pods-6-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-6/Pods-6-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-6/Pods-6-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F660DB1A4722557BC9B0255A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-6-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E80FC28E24E460FD0013409F /* Sources */ = {
@@ -282,10 +351,12 @@
 		};
 		E80FC2A724E461020013409F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0E8BB070098F22D16826380 /* Pods-6.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = clen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,10 +370,12 @@
 		};
 		E80FC2A824E461020013409F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D1EA4175E8523707E1DA681 /* Pods-6.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = clen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,7 +399,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E80FC2A624E461020013409F /* Build configuration list for PBXNativeTarget "clen" */ = {
+		E80FC2A624E461020013409F /* Build configuration list for PBXNativeTarget "6" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E80FC2A724E461020013409F /* Debug */,
